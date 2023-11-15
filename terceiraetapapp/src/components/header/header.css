@@ -15,6 +15,10 @@
 
 .hello {
   padding-left: 2rem;
+  margin-bottom: 0;
+}
+.hello-ej{
+  margin-top: 0;
 }
 
 .encej {
