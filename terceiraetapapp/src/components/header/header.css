@@ -1,0 +1,26 @@
+.inicio {
+  height: 200px;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1%;
+}
+
+.img-avatar-div {
+  display: flex;
+  align-items: flex-start;
+  align-items: center;
+}
+
+.hello {
+  padding-left: 2rem;
+}
+
+.encej {
+  display: flex;
+  justify-content: end;
+}
+.encej-logo {
+  width: 250px;
+}
