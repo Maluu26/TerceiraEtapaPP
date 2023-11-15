@@ -2,8 +2,9 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import App from './App';
 import ProfileEdit from './ProfileEdit';
-import ShowRooms from './showRooms'
-import Welcome from './Welcome'
+import ShowRooms from './showRooms';
+import Welcome from './Welcome';
+import Login from './Login';
 
 
 const AppRouter: React.FC = () => {
@@ -14,6 +15,7 @@ const AppRouter: React.FC = () => {
         <Route path="/profile" element={<ProfileEdit />} />
         <Route path="/rooms" element={<ShowRooms />} />
         <Route path="/welcome" element={<Welcome />} />
+        <Route path="/login" element={<Login />} />
         {/* Adicionar rotas */}
       </Routes>
     </Router>
