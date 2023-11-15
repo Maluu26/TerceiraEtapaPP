@@ -5,7 +5,7 @@ import ProfileEdit from './ProfileEdit';
 import ShowRooms from './showRooms';
 import Welcome from './Welcome';
 import Login from './Login';
-
+import Register from './Cadastro';
 
 const AppRouter: React.FC = () => {
   return (
@@ -16,6 +16,7 @@ const AppRouter: React.FC = () => {
         <Route path="/rooms" element={<ShowRooms />} />
         <Route path="/welcome" element={<Welcome />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
         {/* Adicionar rotas */}
       </Routes>
     </Router>

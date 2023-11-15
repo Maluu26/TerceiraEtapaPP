@@ -12,7 +12,7 @@ function CadastroPage() {
                     <img src={encejLogo} />
                 </div>
                 <div className="reserva">
-                    <h1>Reserva de Quartos</h1>
+                    <h1>Cadastro</h1>
                     <form className="cadastro-inputs">
                         <div>
                             <input
