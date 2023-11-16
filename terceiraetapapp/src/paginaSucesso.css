@@ -1,0 +1,65 @@
+body {
+    background-color: #C10046;
+}
+
+.sucesso {
+    height: 100px;
+    width: 60%;
+    display: flex;
+    margin-top: 5%;
+    margin-left: 40%;
+    align-items: center;
+}
+
+h1 {
+    color: white;
+    font-size: 40px;
+}
+
+.quarto {
+    background-color: white;
+    min-height: 200px;
+    max-height: 800px;
+    display: flex;
+    width: 550px;
+    margin-left: 30%;
+    border-radius: 10px;
+}
+
+.pessoa {
+    background-color: white;
+    height: 90px;
+    width: 120px;
+    display: flex;
+    margin-left: 5%;
+    margin-top: 5%;
+    white-space: pre-wrap;
+}
+
+h3 {
+    word-wrap: break-word;
+}
+
+.inicioContainer {
+    background-color: white;
+    height: 70px;
+    display: block;
+    width: 550px;
+    margin-left: 30%;
+    border-radius: 10px;
+
+}
+
+#content1::after {
+    content: "\a";
+    white-space: pre;
+}
+
+#content2::before {
+    content: "\a";
+    white-space: pre;
+}
+
+.coluna {
+    width: 275px;
+}
