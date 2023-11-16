@@ -22,3 +22,9 @@ input[type=password] {
 .login-button{
     margin-bottom: 10%;
 }
+
+@media (max-width: 480px) {
+    .encej-logo-div img {
+      width: 300px;
+    }
+  }

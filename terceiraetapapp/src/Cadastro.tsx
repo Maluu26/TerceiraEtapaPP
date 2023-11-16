@@ -8,7 +8,7 @@ function CadastroPage() {
     return (
         <section>
             <div>
-                <div className=" img_centro">
+                <div className="encej-logo-div">
                     <img src={encejLogo} />
                 </div>
                 <div className="reserva">

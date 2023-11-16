@@ -28,3 +28,30 @@
 .encej-logo {
   width: 250px;
 }
+
+@media (max-width: 850px) {
+  .img-avatar-div img {
+    width: 150px;
+  }
+  .encej img{
+    width: 190px;
+  }
+}
+
+@media (max-width: 640px) {
+  .img-avatar-div img {
+    width: 100px;
+  }
+  .encej img{
+    width: 100px;
+  }
+}
+
+@media (max-width: 590px) {
+  .img-avatar-div img {
+    width: 100px;
+  }
+  .encej img{
+    display: none;
+  }
+}

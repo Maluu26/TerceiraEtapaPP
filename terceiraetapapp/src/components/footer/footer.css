@@ -2,8 +2,39 @@
   margin-bottom: 1%;
   align-content: center;
   display: flex;
+  justify-self: center;
 }
 
 .juju {
   margin-left: 250px;
+}
+
+@media (max-width: 815px) {
+  .juju {
+    width: 200px;
+    margin-left: 100px;
+  }
+  .ct {
+    width: 200px;
+  }
+}
+
+@media (max-width: 545px) {
+  .juju {
+    width: 170px;
+    margin-left: 70px;
+  }
+  .ct {
+    width: 170px;
+  }
+}
+
+@media (max-width: 420px) {
+  .juju {
+    width: 130px;
+    margin-left: 40px;
+  }
+  .ct {
+    width: 130px;
+  }
 }

@@ -12,11 +12,11 @@ const AppRouter: React.FC = () => {
     <Router>
       <Routes>
         <Route path="/" element={<App />} />
-        <Route path="/profile" element={<ProfileEdit />} />
+        <Route path="/profile" element={<ProfileEdit />} /> {/* Responsivo*/}
         <Route path="/rooms" element={<ShowRooms />} />
-        <Route path="/welcome" element={<Welcome />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
+        <Route path="/welcome" element={<Welcome />} /> {/* Responsivo*/}
+        <Route path="/login" element={<Login />} /> {/* Responsivo*/}
+        <Route path="/register" element={<Register />} /> {/* Responsivo*/}
         {/* Adicionar rotas */}
       </Routes>
     </Router>

@@ -1,9 +1,19 @@
 .centro {
-    margin: auto;
-    height: 400px;
-    width: 50%;
+  margin: auto;
+  height: 400px;
+  width: 50%;
+}
+
+.welcome {
+  display: block;
+}
+
+.reserva p{
+  text-align: justify;
+}
+
+@media (max-width: 750px) {
+  .centro{
+    width: 80%;
   }
-  
-  .welcome {
-    display: block;
-  }
+}

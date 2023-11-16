@@ -2,6 +2,7 @@ import React, { useState, FormEvent, ChangeEvent } from "react";
 import "./ProfileEdit.css";
 import EditPicIcon from "./assets/edit-image-icon.svg";
 import Button from "./components/buttons/button";
+import Footer from "./components/footer/footer";
 
 function ProfileEdit() {
   const [companyName, setCompanyName] = useState("");
@@ -74,10 +75,11 @@ function ProfileEdit() {
             <option value="Empresa 3">Zetta</option>
           </select>
         </label>
-        <div>
+        <div className="push-footer-down">
           {/* Botão para enviar o formulário */}
           <Button insideText="Salvar" className="button-style"></Button>
         </div>
+        <Footer></Footer>
       </form>
     </section>
   );
