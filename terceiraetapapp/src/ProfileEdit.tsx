@@ -73,6 +73,13 @@ function ProfileEdit() {
             <option value="Empresa 1">CT Junior</option>
             <option value="Empresa 2">Adapti</option>
             <option value="Empresa 3">Zetta</option>
+            <option value="Empresa 4">Biológica</option>
+            <option value="Empresa 5">Archipolis</option>
+            <option value="Empresa 6">Projagro</option>
+            <option value="Empresa 7">Energy</option>
+            <option value="Empresa 8">Projeta</option>
+            <option value="Empresa 9">EDV</option>
+            <option value="Empresa 10">CJA</option>
           </select>
         </label>
         <div className="push-footer-down">
