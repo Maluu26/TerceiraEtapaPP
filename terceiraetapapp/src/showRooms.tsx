@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import SubtitlePic from "./assets/subtitle-occupied-free.svg";
 import RoomCard from "./components/room-card/roomCard";
 import Header from "./components/header/header";
+import Footer from "./components/footer/footer";
 
 import avatar from "./assets/Avatar.svg";
 import encejLogo from "./assets/Logo-Encej.svg";
@@ -108,6 +109,7 @@ function ShowRooms() {
           onDetailsClick={ShowRooms}
         ></RoomCard>
       </div>
+      <Footer></Footer>
     </section>
   );
 }

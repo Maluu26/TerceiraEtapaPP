@@ -6,6 +6,7 @@ import ShowRooms from './showRooms';
 import Welcome from './Welcome';
 import Login from './Login';
 import Register from './Cadastro';
+import SeeProfile from './ProfilePage';
 
 const AppRouter: React.FC = () => {
   return (
@@ -13,7 +14,8 @@ const AppRouter: React.FC = () => {
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/profile" element={<ProfileEdit />} /> {/* Responsivo*/}
-        <Route path="/rooms" element={<ShowRooms />} />
+        <Route path="/see-profile" element={<SeeProfile />} /> 
+        <Route path="/rooms" element={<ShowRooms />} /> {/* Responsivo*/}
         <Route path="/welcome" element={<Welcome />} /> {/* Responsivo*/}
         <Route path="/login" element={<Login />} /> {/* Responsivo*/}
         <Route path="/register" element={<Register />} /> {/* Responsivo*/}

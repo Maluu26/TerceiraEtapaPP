@@ -1,0 +1,26 @@
+.edit-input-fixed::placeholder {
+  color: black;
+  text-align: center;
+}
+
+.edit-inputs-fixed div {
+  margin-bottom: 20px;
+}
+
+.edit-inputs-fixed {
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+.margin-top{
+    margin-top: 50px;
+}
+
+@media (max-width: 540px) {
+  input[type="text"] {
+    width: 80%;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+  }
+}
