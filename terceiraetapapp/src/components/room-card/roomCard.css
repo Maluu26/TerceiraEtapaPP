@@ -1,0 +1,55 @@
+.room-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 550px;
+  height: 100px;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.left-section,
+.middle-section,
+.right-section {
+  flex: 1;
+}
+
+.left-section {
+  justify-content: center;
+  display: block;
+}
+.left-section div {
+  justify-content:center ;
+  display: flex;
+}
+.left-section p {
+  margin-top: 0;
+  font-size: 19px;
+  color: white;
+  border-radius: 9px;
+  width: 100px;
+}
+.left-section h1 {
+  margin-bottom: 0;
+  font-size: 19px;
+  color: rgba(0, 0, 0, 1);
+}
+
+.middle-section {
+  text-align: center;
+}
+.middle-section img {
+  width: 135px;
+}
+
+.right-section {
+  text-align: center;
+}
+.right-section button {
+  background-color: rgba(217, 217, 217, 1);
+  border: 0;
+  border-radius: 20px;
+}
