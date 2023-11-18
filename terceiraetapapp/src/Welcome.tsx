@@ -15,7 +15,7 @@ function ShowRooms() {
           <h1>Boas Vindas, Fulano</h1>
         </div>
 
-        <div className="reserva">
+        <div className="reserva-text-button">
           <p>
             Você deverá escolher um quarto dentre os disponibilizados. Caso
             queira trocar de quarto, basta escolher outro quarto que têm vagas

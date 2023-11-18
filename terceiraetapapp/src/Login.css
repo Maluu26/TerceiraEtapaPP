@@ -16,6 +16,10 @@ input[type=password] {
     border: none;
 }
 
+.login-title{
+    justify-content: center;
+}
+
 .login-input{
     margin-bottom: 2%;
 }

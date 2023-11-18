@@ -7,6 +7,8 @@ import Welcome from './Welcome';
 import Login from './Login';
 import Register from './Cadastro';
 import SeeProfile from './ProfilePage';
+import Success from './successPage';
+
 
 const AppRouter: React.FC = () => {
   return (
@@ -19,6 +21,7 @@ const AppRouter: React.FC = () => {
         <Route path="/welcome" element={<Welcome />} /> {/* Responsivo*/}
         <Route path="/login" element={<Login />} /> {/* Responsivo*/}
         <Route path="/register" element={<Register />} /> {/* Responsivo*/}
+        <Route path="/success" element={<Success />} /> 
         {/* Adicionar rotas */}
       </Routes>
     </Router>

@@ -13,7 +13,7 @@ function LoginPage() {
         </div>
         <div className="reserva">
           <h1>Reserva de Quartos</h1>
-          <p> Faça o login para continuar</p>
+          <p className="login-title"> Faça o login para continuar</p>
           <form className="login-inputs">
             <div>
               <input

@@ -7,12 +7,12 @@
   display: block;
 }
 
-.reserva p{
+.reserva-text-button p {
   text-align: justify;
 }
 
 @media (max-width: 750px) {
-  .centro{
+  .centro {
     width: 80%;
   }
 }

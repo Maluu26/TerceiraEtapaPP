@@ -6,6 +6,14 @@
   justify-content: space-between;
   margin-top: 1%;
 }
+.avatar-pic-person {
+  width: 100px;
+}
+.hello-ej-person {
+  margin-top: 0;
+  padding-left: 1rem;
+  color: black;
+}
 
 .img-avatar-div {
   display: flex;
@@ -13,11 +21,17 @@
   align-items: center;
 }
 
+.header-person-name {
+  padding-left: 0;
+  margin-bottom: 0;
+  color: black;
+}
+
 .hello {
   padding-left: 2rem;
   margin-bottom: 0;
 }
-.hello-ej{
+.hello-ej {
   margin-top: 0;
 }
 
@@ -33,7 +47,7 @@
   .img-avatar-div img {
     width: 150px;
   }
-  .encej img{
+  .encej img {
     width: 190px;
   }
 }
@@ -42,7 +56,7 @@
   .img-avatar-div img {
     width: 100px;
   }
-  .encej img{
+  .encej img {
     width: 100px;
   }
 }
@@ -51,7 +65,7 @@
   .img-avatar-div img {
     width: 100px;
   }
-  .encej img{
+  .encej img {
     display: none;
   }
 }
