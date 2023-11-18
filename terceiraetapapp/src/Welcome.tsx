@@ -28,6 +28,7 @@ function ShowRooms() {
         </div>
         
       </div>
+      <div className="margin-top"></div>
       <Footer></Footer>
     </section>
   );
