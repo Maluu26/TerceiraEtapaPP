@@ -8,7 +8,7 @@ import Login from './Login';
 import Register from './Cadastro';
 import SeeProfile from './ProfilePage';
 import Success from './successPage';
-
+import AdminPage from './admPage'
 
 const AppRouter: React.FC = () => {
   return (
@@ -16,12 +16,13 @@ const AppRouter: React.FC = () => {
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/profile" element={<ProfileEdit />} /> {/* Responsivo*/}
-        <Route path="/see-profile" element={<SeeProfile />} /> 
+        <Route path="/see-profile" element={<SeeProfile />} /> {/* Responsivo*/}
         <Route path="/rooms" element={<ShowRooms />} /> {/* Responsivo*/}
         <Route path="/welcome" element={<Welcome />} /> {/* Responsivo*/}
         <Route path="/login" element={<Login />} /> {/* Responsivo*/}
         <Route path="/register" element={<Register />} /> {/* Responsivo*/}
-        <Route path="/success" element={<Success />} /> 
+        <Route path="/success" element={<Success />} /> {/* Responsivo*/}
+        <Route path="/adm" element={<AdminPage/>} />
         {/* Adicionar rotas */}
       </Routes>
     </Router>

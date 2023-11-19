@@ -53,6 +53,9 @@
   border: 0;
   border-radius: 20px;
 }
+.vertical-space-3-px{
+  margin-top: 3px;
+}
 
 @media (max-width: 630px) {
   .room-card {
