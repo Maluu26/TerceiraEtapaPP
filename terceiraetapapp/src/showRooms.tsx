@@ -11,14 +11,22 @@ import "./showRooms.css";
 
 function ShowRooms() {
   const [selectedCapacity, setSelectedCapacity] = useState<number | null>(null);
+  const [isBlurred, setIsBlurred] = useState(false);
 
   const handleCapacitySelection = (capacity: number) => {
     setSelectedCapacity(capacity);
   };
+
+  const handleDetailsClick = () => {
+    setIsBlurred(true);
+    console.log(isBlurred);
+  };
+
   return (
-    <section className="show-rooms-container">
+    <section className={`show-rooms-container ${isBlurred ? "blurred" : ""}`}>
       <Header avatarPic={avatar} encejLogo={encejLogo}></Header>
       <hr className="line" />
+
       <img src={SubtitlePic} alt="legenda" className="room-image" />
       <h1>Selecione a capacidade do quarto:</h1>
       <div className="capacity-selection">
@@ -51,65 +59,66 @@ function ShowRooms() {
         <RoomCard
           roomName="Quarto 1"
           status="disponivel"
-          onDetailsClick={ShowRooms}
+          onDetailsClick={handleDetailsClick}
         ></RoomCard>
         <RoomCard
           roomName="Quarto 1"
           status="lotado"
-          onDetailsClick={ShowRooms}
+          onDetailsClick={handleDetailsClick}
         ></RoomCard>
         <RoomCard
           roomName="Quarto 1"
           status="lotado"
-          onDetailsClick={ShowRooms}
+          onDetailsClick={handleDetailsClick}
         ></RoomCard>
         <RoomCard
           roomName="Quarto 1"
           status="lotado"
-          onDetailsClick={ShowRooms}
+          onDetailsClick={handleDetailsClick}
         ></RoomCard>
         <RoomCard
           roomName="Quarto 1"
           status="lotado"
-          onDetailsClick={ShowRooms}
+          onDetailsClick={handleDetailsClick}
         ></RoomCard>
         <RoomCard
           roomName="Quarto 1"
           status="lotado"
-          onDetailsClick={ShowRooms}
+          onDetailsClick={handleDetailsClick}
         ></RoomCard>
         <RoomCard
           roomName="Quarto 1"
           status="lotado"
-          onDetailsClick={ShowRooms}
+          onDetailsClick={handleDetailsClick}
         ></RoomCard>
         <RoomCard
           roomName="Quarto 1"
           status="lotado"
-          onDetailsClick={ShowRooms}
+          onDetailsClick={handleDetailsClick}
         ></RoomCard>
         <RoomCard
           roomName="Quarto 1"
           status="disponivel"
-          onDetailsClick={ShowRooms}
+          onDetailsClick={handleDetailsClick}
         ></RoomCard>
         <RoomCard
           roomName="Quarto 1"
           status="lotado"
-          onDetailsClick={ShowRooms}
+          onDetailsClick={handleDetailsClick}
         ></RoomCard>
         <RoomCard
           roomName="Quarto 1"
           status="disponivel"
-          onDetailsClick={ShowRooms}
+          onDetailsClick={handleDetailsClick}
         ></RoomCard>
         <RoomCard
           roomName="Quarto 1"
           status="disponivel"
-          onDetailsClick={ShowRooms}
+          onDetailsClick={handleDetailsClick}
         ></RoomCard>
       </div>
       <Footer></Footer>
+      {isBlurred && <div className="blur-layer"></div>}
     </section>
   );
 }
