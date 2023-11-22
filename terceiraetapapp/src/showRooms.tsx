@@ -58,62 +58,47 @@ function ShowRooms() {
       <div className="room-cards-container">
         <RoomCard
           roomName="Quarto 1"
-          status="disponivel"
+          status="Disponivel"
           onDetailsClick={handleDetailsClick}
         ></RoomCard>
         <RoomCard
           roomName="Quarto 1"
-          status="lotado"
+          status="Lotado"
           onDetailsClick={handleDetailsClick}
         ></RoomCard>
         <RoomCard
           roomName="Quarto 1"
-          status="lotado"
+          status="Vazio"
           onDetailsClick={handleDetailsClick}
         ></RoomCard>
         <RoomCard
           roomName="Quarto 1"
-          status="lotado"
+          status="Disponivel"
           onDetailsClick={handleDetailsClick}
         ></RoomCard>
         <RoomCard
           roomName="Quarto 1"
-          status="lotado"
+          status="Lotado"
           onDetailsClick={handleDetailsClick}
         ></RoomCard>
         <RoomCard
           roomName="Quarto 1"
-          status="lotado"
+          status="Vazio"
           onDetailsClick={handleDetailsClick}
         ></RoomCard>
         <RoomCard
           roomName="Quarto 1"
-          status="lotado"
+          status="Disponivel"
           onDetailsClick={handleDetailsClick}
         ></RoomCard>
         <RoomCard
           roomName="Quarto 1"
-          status="lotado"
+          status="Lotado"
           onDetailsClick={handleDetailsClick}
         ></RoomCard>
         <RoomCard
           roomName="Quarto 1"
-          status="disponivel"
-          onDetailsClick={handleDetailsClick}
-        ></RoomCard>
-        <RoomCard
-          roomName="Quarto 1"
-          status="lotado"
-          onDetailsClick={handleDetailsClick}
-        ></RoomCard>
-        <RoomCard
-          roomName="Quarto 1"
-          status="disponivel"
-          onDetailsClick={handleDetailsClick}
-        ></RoomCard>
-        <RoomCard
-          roomName="Quarto 1"
-          status="disponivel"
+          status="Vazio"
           onDetailsClick={handleDetailsClick}
         ></RoomCard>
       </div>

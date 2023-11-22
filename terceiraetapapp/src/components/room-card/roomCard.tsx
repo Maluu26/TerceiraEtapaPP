@@ -7,25 +7,26 @@ import avatar from "../../assets/Avatar.svg";
 import Popup from "reactjs-popup";
 import HeaderPerson from "../header/headerPerson";
 import Button from "../buttons/button";
+import ShowRooms from "../../showRooms";
+import successPage from "../../successPage";
 
 interface RoomCardProps {
   roomName: string;
-  status: "lotado" | "disponivel" | "vazio";
+  status: "Lotado" | "Disponivel" | "Vazio";
   onDetailsClick: () => void;
 }
 
-export default function Header({
+export default function roomCard({
   roomName,
   status,
   onDetailsClick,
 }: RoomCardProps) {
-  const backgroundColor = status === "lotado" ? "red" : "green";
+  const backgroundColor = status === "Lotado" ? "red" : "green";
 
-  // Determina o ícone com base no status do quarto
   const iconSrc =
-    status === "lotado"
+    status === "Lotado"
       ? fullRoom
-      : status === "disponivel"
+      : status === "Disponivel"
       ? availableRoom
       : emptyRoom;
 
@@ -49,7 +50,9 @@ export default function Header({
           trigger={<button onClick={onDetailsClick}>Ver Detalhes</button>}
           position="right center"
         >
-          <h1 className="popup-title">Revise as informações do quarto antes de confirmar.</h1>
+          <h1 className="popup-title">
+            Revise as informações do quarto antes de confirmar.
+          </h1>
           <div className="room-details-popup">
             <div className="room-capacity">
               <h1>Quarto 5</h1>
@@ -64,9 +67,9 @@ export default function Header({
             </div>
           </div>
           <div className="popup-buttons">
-            <Button insideText={"Confirmar"} className={"margin-top"}></Button>
+            <Button onClick={successPage} insideText={"Confirmar"} className={"margin-top"}></Button>
             <div className="margin-left"></div>
-            <Button insideText={"Voltar"} className={"margin-top"}></Button>
+            <Button onClick={ShowRooms} insideText={"Voltar"} className={"margin-top"}></Button>
           </div>
         </Popup>
       </div>

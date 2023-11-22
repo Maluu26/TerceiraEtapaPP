@@ -9,7 +9,7 @@ interface RoomCardProps {
   onDetailsClick: () => void;
 }
 
-export default function Header({
+export default function roomCardAdm({
   roomName,
   status,
   onDetailsClick,

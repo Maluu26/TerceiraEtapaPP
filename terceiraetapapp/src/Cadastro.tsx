@@ -6,10 +6,58 @@ import "./Cadastro.css";
 import { ChangeEvent, useState } from "react";
 
 function CadastroPage() {
-  const [companyName, setCompanyName] = useState("");
-  const handleCompanyNameChange = (event: ChangeEvent<HTMLSelectElement>) => {
-    setCompanyName(event.target.value);
+  const [nome, setNome] = useState("");
+  const [email, setEmail] = useState("");
+  const [senha, setSenha] = useState("");
+  const [empresa, setEmpresa] = useState("");
+  const [status, setStatus] = useState("");
+
+  const handleNomeChange = (event: ChangeEvent<HTMLInputElement>) => {
+    setNome(event.target.value);
   };
+
+  const handleEmailChange = (event: ChangeEvent<HTMLInputElement>) => {
+    setEmail(event.target.value);
+  };
+
+  const handleSenhaChange = (event: ChangeEvent<HTMLInputElement>) => {
+    setSenha(event.target.value);
+  };
+
+  const handleEmpresaChange = (event: ChangeEvent<HTMLSelectElement>) => {
+    setEmpresa(event.target.value);
+  };
+
+  const handleCadastroClick = async () => {
+    try {
+      const response = await fetch(
+        "https://wldzajo7ka.execute-api.us-east-1.amazonaws.com/dev/person",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            nome: nome,
+            email: email,
+            senha: senha,
+            empresa: empresa,
+          }),
+        }
+      );
+      const result = await response.json();
+
+      console.log(response)
+
+    } catch (error) {
+      // Lida com erros durante a requisição
+      console.error("Erro na requisição:", error);
+
+      // Atualiza o estado de status com base no erro
+      setStatus("error");
+    }
+  };
+
   return (
     <section>
       <div>
@@ -26,6 +74,8 @@ function CadastroPage() {
                 id="nome"
                 name="nome"
                 placeholder="Nome"
+                value={nome}
+                onChange={handleNomeChange}
               />
             </div>
             <div>
@@ -35,10 +85,16 @@ function CadastroPage() {
                 id="email"
                 name="email"
                 placeholder="Email"
+                value={email}
+                onChange={handleEmailChange}
               />
             </div>
             <div className="select-div">
-              <select className="ej-select" value={companyName} onChange={handleCompanyNameChange}>
+              <select
+                className="ej-select"
+                value={empresa}
+                onChange={handleEmpresaChange}
+              >
                 <option value="" disabled hidden>
                   Empresa Júnior
                 </option>
@@ -62,10 +118,16 @@ function CadastroPage() {
                 id="senha"
                 name="senha"
                 placeholder="Senha"
+                value={senha}
+                onChange={handleSenhaChange}
               />
             </div>
             <div>
-              <Button insideText="Cadastrar" className="login-button"></Button>
+              <Button
+                insideText="Cadastrar"
+                className="login-button"
+                onClick={handleCadastroClick}
+              ></Button>
             </div>
           </form>
         </div>
