@@ -16,7 +16,6 @@ export default function Header({
 }: RoomCardProps) {
   const backgroundColor = status === "lotado" ? "red" : "green";
 
-  // Determina o ícone com base no status do quarto
   const iconSrc =
     status === "lotado"
       ? fullRoom

@@ -1,25 +1,19 @@
-/* .room-details{
-    display: flex;
-} */
-
 .people-column {
   display: flex;
-  flex-wrap: wrap; /* Permite que os elementos fluam para a próxima linha se não houver espaço suficiente */
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.sucesso{
-    display: flex;
-    margin-bottom: 50px;
+.sucesso {
+  display: flex;
+  margin-bottom: 50px;
 }
-.sucesso img{
-    margin-right: 15px;
+.sucesso img {
+  margin-right: 15px;
 }
 .people-column > * {
-  width: calc(
-    50% - 10px
-  ); /* Define a largura para 50% com uma pequena folga entre os elementos */
-  margin-bottom: 10px; /* Adiciona margem inferior para espaçamento entre os elementos */
+  width: calc(50% - 10px);
+  margin-bottom: 10px;
   height: auto;
   margin-bottom: 30px;
 }
@@ -41,7 +35,7 @@
 }
 @media screen and (max-width: 995px) {
   .people-column > * {
-    width: 100%; /* Em telas menores, os elementos ocupam toda a largura */
+    width: 100%;
   }
   .room-capacity-img {
     width: 7.5rem;
@@ -53,19 +47,17 @@
 }
 @media screen and (max-width: 720px) {
   .room-capacity {
-    display: block; /* Em telas menores, os elementos ocupam toda a largura */
+    display: block;
     margin-bottom: 40px;
   }
   .room-details {
     width: 80%;
   }
-  .sucesso{
+  .sucesso {
     display: block;
     margin-bottom: 50px;
-}
-.sucesso img{
+  }
+  .sucesso img {
     margin-right: 0;
+  }
 }
-}
-
-

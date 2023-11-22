@@ -21,7 +21,6 @@ export default function Header({
 }: RoomCardProps) {
   const backgroundColor = status === "lotado" ? "red" : "green";
 
-  // Determina o ícone com base no status do quarto
   const iconSrc =
     status === "lotado"
       ? fullRoom
@@ -49,7 +48,9 @@ export default function Header({
           trigger={<button onClick={onDetailsClick}>Ver Detalhes</button>}
           position="right center"
         >
-          <h1 className="popup-title">Revise as informações do quarto antes de confirmar.</h1>
+          <h1 className="popup-title">
+            Revise as informações do quarto antes de confirmar.
+          </h1>
           <div className="room-details-popup">
             <div className="room-capacity">
               <h1>Quarto 5</h1>

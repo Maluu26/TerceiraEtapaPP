@@ -42,7 +42,6 @@ function CadastroPage() {
                 <option value="" disabled hidden>
                   Empresa Júnior
                 </option>
-                {/* Adicionar opções conforme o backend */}
                 <option value="Empresa 1">CT Junior</option>
                 <option value="Empresa 2">Adapti</option>
                 <option value="Empresa 3">Zetta</option>
