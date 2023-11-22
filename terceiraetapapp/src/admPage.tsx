@@ -74,7 +74,7 @@ function admPage() {
         ></RoomCard>
       </div>
       <div className="margin-top"></div>
-      <Button insideText="Novo quarto" className=""></Button>
+      <Button onClick={admPage} insideText="Novo quarto" className=""></Button>
       <div className="margin-top"></div>
     </section>
   );

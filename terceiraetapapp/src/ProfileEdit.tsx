@@ -84,7 +84,7 @@ function ProfileEdit() {
         </label>
         <div className="push-footer-down">
           {/* Botão para enviar o formulário */}
-          <Button insideText="Salvar" className="button-style"></Button>
+          <Button onClick={ProfileEdit} insideText="Salvar" className="button-style"></Button>
         </div>
         <Footer></Footer>
       </form>

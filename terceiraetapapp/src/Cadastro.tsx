@@ -28,6 +28,7 @@ function CadastroPage() {
     setEmpresa(event.target.value);
   };
 
+  //Tentativa de integração com o Back End
   const handleCadastroClick = async () => {
     try {
       const response = await fetch(
@@ -44,10 +45,12 @@ function CadastroPage() {
             empresa: empresa,
           }),
         }
-      );
-      const result = await response.json();
+      ).then(response => response.text())
+      .then(result => console.log(result))
+      .catch(error => console.log('error', error));
+      // const result = await response.json();
 
-      console.log(response)
+      // console.log(result)
 
     } catch (error) {
       // Lida com erros durante a requisição

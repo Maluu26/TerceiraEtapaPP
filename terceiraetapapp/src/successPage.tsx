@@ -28,7 +28,7 @@ function successPage() {
         </div>
       </div>
       <div className="margin-top"></div>
-      <Button insideText="Voltar" className=""></Button>
+      <Button onClick={successPage} insideText="Voltar" className=""></Button>
       <div className="margin-top"></div>
     </section>
   );

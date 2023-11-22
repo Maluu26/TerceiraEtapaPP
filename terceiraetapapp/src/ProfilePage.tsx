@@ -48,7 +48,7 @@ function ProfilePage() {
       </div>
       <RoomCard
         roomName="Quarto 1"
-        status="disponivel"
+        status="Disponivel"
         onDetailsClick={ProfilePage}
       ></RoomCard>
       <div className="margin-top"></div>

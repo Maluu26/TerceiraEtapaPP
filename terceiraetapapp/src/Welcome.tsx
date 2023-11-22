@@ -23,7 +23,7 @@ function ShowRooms() {
             informações de cada quarto, escolha a opção “ver quartos”.
           </p>
           <form>
-            <Button insideText="Ver quartos" className="button-style"></Button>
+            <Button onClick={ShowRooms} insideText="Ver quartos" className="button-style"></Button>
           </form>
         </div>
         

@@ -34,7 +34,7 @@ function LoginPage() {
               />
             </div>
             <div>
-              <Button insideText="Entrar" className="login-button"></Button>
+              <Button onClick={LoginPage} insideText="Entrar" className="login-button"></Button>
             </div>
           </form>
         </div>
