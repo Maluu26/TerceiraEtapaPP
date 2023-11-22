@@ -22,7 +22,7 @@ const AppRouter: React.FC = () => {
         <Route path="/login" element={<Login />} /> {/* Responsivo*/}
         <Route path="/register" element={<Register />} /> {/* Responsivo*/}
         <Route path="/success" element={<Success />} /> {/* Responsivo*/}
-        <Route path="/adm" element={<AdminPage/>} />
+        <Route path="/adm" element={<AdminPage/>} /> {/* Responsivo*/}
         {/* Adicionar rotas */}
       </Routes>
     </Router>
